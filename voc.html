@@ -1,31 +1,47 @@
 <html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="voc.css">
+    <script src="voc.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
-<div class="content_container">
+<div id="home" class="content_container">
 
-  <div class="header_stretch desktop">
-    <div class="header">
-      <a href="" class="header_a_first">Home</a>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Testimonials</a>
+  <div id="home_mobile" class="header_stretch mobile p_b_xs">
+
+    <div class="nav">
+      <a class="home_link" href="#home" class="header_a_first">Home</a>
+      <a class="about_link" href="#about">About</a>
+      <a class="services_link" href=".services_stretch">Services</a>
+      <a class="quotes_link" href="#quotes">Testimonials</a>
     </div>
-  </div>
 
-  <div class="header_stretch mobile">
-    <div class="header">
+<!--     <div class="header_mobile">
         <h1 class="p_b_xs">MEET LAURI NEWELL</h1>
         <h3>Your Professional Organizer</h3>
+    </div> -->
+
+  </div>
+
+  <div id="home_desktop" class="header_stretch desktop p_b_xs">
+    <div class="header">
+      <a class="home_link header_a_first" href="#home">Home</a>
+      <a class="about_link" href="#about">About</a>
+      <a class="services_link" href=".desktop_services">Services</a>
+      <a class="quotes_link" href="#quotes">Testimonials</a>
     </div>
   </div>
 
   <!-- start mobile intro -->
   <div class="meet_stretch p_b_s p_t_s_40 mobile">
-    <div class="meet">
+    <div class="meet mobile_meet">
+
+        <h1 class="p_b_xs">MEET LAURI NEWELL</h1>
+        <h3>Your Professional Organizer</h3>
 
       <div class="meet_img_container">
             <img class="meet_img" src="https://static.wixstatic.com/media/3de8ec_3fce4e4e83c64a6494335b524e5e9c76~mv2.jpg/v1/crop/x_0,y_201,w_5048,h_2362/fill/w_940,h_440,al_c,q_85,usm_0.66_1.00_0.01/IMG_0574.webp">      
@@ -42,13 +58,13 @@
   <!-- end mobile intro -->
 
   <!-- start dstp intro -->
-  <div class="meet_stretch p_b_l p_t_l desktop">
+  <div class="meet_stretch p_b_m desktop">
     <div class="meet">
       <div class="meet_img_container">
             <img class="meet_img" src="https://static.wixstatic.com/media/3de8ec_3fce4e4e83c64a6494335b524e5e9c76~mv2.jpg/v1/crop/x_0,y_201,w_5048,h_2362/fill/w_940,h_440,al_c,q_85,usm_0.66_1.00_0.01/IMG_0574.webp">      
       </div>
       <div class="meet_text_container p_l_s p_r_s">
-        <h1>MEET LAURI NEWELL</h1>
+        <h1 class="m_t_s">MEET LAURI NEWELL</h1>
         <h3 class="m_b_s_40">Your Professional Organizer</h3>
         <p class="m_b_m">I believe you deserve to feel restored and inspired by your home! Let me help you feel great about your space!</p>
         <a href="" class="btn btn_phone m_r_s">555-555-5555</a>
@@ -59,7 +75,7 @@
   </div>
   <!-- end dstp intro -->
 
-  <div class="about_stretch p_b_l p_t_l">
+  <div id="about" class="about_stretch p_b_l p_t_l">
 
     <div class="about">
       <div class="about_img_container">
@@ -75,7 +91,7 @@
 
   </div>
 
-  <div class="services_stretch p_b_l p_t_l mobile_services">
+  <div id="services_mobile" class="services_stretch p_b_s p_t_m mobile_services">
 
     <div class="services">
 
@@ -118,7 +134,7 @@
     
   </div>
 
-  <div class="services_stretch p_b_l p_t_l desktop_services">
+  <div id="services" class="services_stretch p_b_s p_t_m desktop_services">
 
     <div class="services">
 
@@ -160,22 +176,22 @@
     
   </div>
 
-  <div class="quotes_stretch p_b_l p_t_l">
+  <div id="quotes" class="quotes_stretch p_b_l p_t_l">
     <div class="quotes">
 
-        <div class="quote-item">
+        <div class="quote-item p_r_s p_l_s">
           <p>Lauri is incredibly helpful! She helped me organize my kitchen in a way that made more sense for our layout and made it more functional for us, including our kids!</p>
           <h3>Rebecca, Nashville TN</h3>
         </div>
-        <div class="quote-item">
+        <div class="quote-item p_r_s p_l_s">
           <p>When Lauri was done, I was happy and excited to use my kitchen!</p>
           <h3>Mitzi, Brentwood TN</h3>
         </div>
-        <div class="quote-item">
+        <div class="quote-item p_r_s p_l_s">
           <p>I loved my experience with Lauri and Victory Over Chaos!  Lauri brings peace, professionalism, and sunshine to her visits. Compassionate and creative, Lauri invited us to recall memories and then gave us permission to release things that didn’t serve us anymore or keep the things that did.  Walking into my kitchen no longer gives me anxiety! There is a place for everything - even in the kitchen I always thought was too small. Let Lauri help you achieve victory over the clutter.</p>
           <h3>Amie, Nashville TN</h3>
         </div>  
-        <div class="quote-item">
+        <div class="quote-item p_r_s p_l_s">
           <p>Lauri helped me organize and de clutter my closet.  Now, it’s a space I love to walk into!!</p>
           <h3>Alyson, Brentwood TN</h3>
         </div>
