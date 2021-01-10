@@ -146,6 +146,8 @@ display: table; height: 600px; overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+#home_desktop {
   height: 44px;
 }
 .header {
@@ -165,7 +167,6 @@ display: table; height: 600px; overflow: hidden;
   color: white;
 }
 .header a:hover {
-  /*color: #720000;*/
   font-weight: bold;
   border-bottom: 2px solid #720000;
 }
@@ -176,6 +177,10 @@ display: table; height: 600px; overflow: hidden;
     margin-right: 10px;
     text-decoration: none;
     color: white;
+}
+.nav a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #720000;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -194,6 +199,7 @@ display: table; height: 600px; overflow: hidden;
   color: white;
   max-width: 1200px;
   margin: auto;
+  padding-top: 30px;
 }
 
 .mobile_meet {
