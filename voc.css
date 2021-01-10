@@ -1,7 +1,9 @@
 body {
   margin: 0
 }
-
+.bold {
+  font-weight: bold;
+}
 .left {
   float: left;
 }
@@ -118,6 +120,20 @@ body {
   color: white;
 }
 
+.footer .btn {
+    padding: 12px 20px 12px 20px;
+    border-radius: 18px;
+    background: #000020;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .btn:hover {
+    background: #720000;
+    color: white;
+}
+
 h1, h2, h3, h4, p, a {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.2;
@@ -137,7 +153,7 @@ display: table; height: 600px; overflow: hidden;
   vertical-align: middle;
 }
 
-.about h1, .services h1, .quotes h1 {
+.about h1, .services h1, .quotes h1, .quotes_text_container h1 {
   font-size: 40px;
 }
 
@@ -292,7 +308,53 @@ display: table; height: 600px; overflow: hidden;
   margin: auto;
   color: white;
 }
+.quotes_text_container {
+  color: white;
+}
 /*end quotes*/
+
+/*start footer*/
+.footer_stretch {
+    background: #efece2;
+    width: 100%;
+    z-index: 1;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+}
+.footer {
+/*    background: #000020;*/
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer a {
+    margin-top: 13px;
+    font-size: 16px;
+    margin-right: 10px;
+/*    float: left;*/
+    text-decoration: none;
+    color: #000020;
+    font-weight: bold;
+}
+.footer a:hover {
+  font-weight: bold;
+
+}
+.photo_credit:hover {
+  border-bottom: 2px solid #720000;
+}
+.footer_first_link {
+  margin-left: 5px;
+}
+.footer_1 {
+  text-align: left;
+}
+.footer_2 {
+  text-align: right;
+}
+/*end footer*/
 
 .mobile {
   display: none;
@@ -356,5 +418,14 @@ display: table; height: 600px; overflow: hidden;
 
   .service_text_container {
     width: 100%;
+  }
+  .photo_credit {
+    display: block;
+  }
+  .footer a {
+      margin-top: 23px;
+  }
+  .footer_stretch {
+      padding-top: 26px;
   }
 }
