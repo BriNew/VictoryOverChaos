@@ -110,6 +110,12 @@ body {
     background: white;
     color: #000020;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+  background: #720000;
+  color: white;
 }
 
 h1, h2, h3, h4, p, a {
@@ -140,6 +146,7 @@ display: table; height: 600px; overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 1;
+  height: 44px;
 }
 .header {
     /*margin-bottom: 60px;*/
@@ -156,6 +163,11 @@ display: table; height: 600px; overflow: hidden;
   float: left;
   text-decoration: none;
   color: white;
+}
+.header a:hover {
+  /*color: #720000;*/
+  font-weight: bold;
+  border-bottom: 2px solid #720000;
 }
 .nav {
   padding-top: 10px;
