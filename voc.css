@@ -139,6 +139,7 @@ display: table; height: 600px; overflow: hidden;
   background: black;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .header {
     /*margin-bottom: 60px;*/
