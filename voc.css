@@ -318,7 +318,7 @@ display: table; height: 600px; overflow: hidden;
     background: #efece2;
     width: 100%;
     z-index: 1;
-    padding-top: 21px;
+    padding-top: 28px;
     padding-bottom: 20px;
 }
 }
@@ -327,10 +327,10 @@ display: table; height: 600px; overflow: hidden;
     color: white;
     max-width: 1200px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .footer a {
-    margin-top: 13px;
     font-size: 16px;
     margin-right: 10px;
 /*    float: left;*/
@@ -342,9 +342,17 @@ display: table; height: 600px; overflow: hidden;
   font-weight: bold;
 
 }
-.photo_credit:hover {
-  border-bottom: 2px solid #720000;
+.photo_credit {
+  display: block;
+  margin-top: 25px;
+  font-weight: 400 !important;
 }
+.photo_credit:hover {
+  /*border-bottom: 2px solid #720000;*/
+  font-weight: bold !important;
+
+}
+
 .footer_first_link {
   margin-left: 5px;
 }
