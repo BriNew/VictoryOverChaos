@@ -129,7 +129,21 @@ body {
     font-weight: bold;
 }
 
+.hiw .btn {
+    padding: 12px 20px 12px 20px;
+    border-radius: 18px;
+    background: #000020;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .footer .btn:hover {
+    background: #720000;
+    color: white;
+}
+
+.hiw .btn:hover {
     background: #720000;
     color: white;
 }
@@ -153,7 +167,7 @@ display: table; height: 600px; overflow: hidden;
   vertical-align: middle;
 }
 
-.about h1, .services h1, .quotes h1, .quotes_text_container h1 {
+.about h1, .services h1, .quotes h1, .quotes_text_container h1, .hiw h1, .faq h1, .faq_text_container h1 {
   font-size: 40px;
 }
 
@@ -246,6 +260,11 @@ display: table; height: 600px; overflow: hidden;
 .about_img_container img {
   border-radius: 50%;
 }
+
+.hiw_stretch {
+  background: #efece2;
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -311,11 +330,27 @@ display: table; height: 600px; overflow: hidden;
 .quotes_text_container {
   color: white;
 }
+
+.faq_stretch {
+  background: #efece2;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin: auto;
+  /*color: white;*/
+}
+.faq_text_container {
+  /*color: white;*/
+}
 /*end quotes*/
 
 /*start footer*/
 .footer_stretch {
-    background: #efece2;
+    background: #000020;
     width: 100%;
     z-index: 1;
     padding-top: 28px;
@@ -370,6 +405,22 @@ display: table; height: 600px; overflow: hidden;
 
 .mobile_services {
   display: none;
+}
+
+.hiw_li {
+  font-weight: bold;
+}
+
+.hiw_p {
+  text-align: left;
+}
+@media only screen and (min-width: 720px) {
+  .services_btn_mobile {
+    display: none;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -435,5 +486,8 @@ display: table; height: 600px; overflow: hidden;
   }
   .footer_stretch {
       padding-top: 26px;
+  }
+  p {
+    font-size: 14px;
   }
 }
