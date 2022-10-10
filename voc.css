@@ -499,7 +499,7 @@ display: table; height: 600px; overflow: hidden;
     font-size: 14px;
   }
 
-@media only screen and (max-width: 364px) {
+@media only screen and (max-width: 375px) {
   .stack_btn {
     display: block;
     max-width: 146px;
