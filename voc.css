@@ -297,7 +297,8 @@ display: table; height: 600px; overflow: hidden;
 
 .service_row {
   width:100%;
-  height:600px;
+  height:1090px;
+  /*height:600px;*/
 }
 
 .service_row img {
