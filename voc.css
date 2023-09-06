@@ -221,6 +221,23 @@ display: table; height: 600px; overflow: hidden;
   border-bottom: 2px solid #720000;
 }
 
+.home-logo {
+  left: 0;
+  top: 0px;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+.home-logo-mobile {
+  left: 0;
+  top: 0px;
+  position: absolute;
+  width: 10rem;
+  height: auto;
+  z-index: 1;
+}
+
 @media only screen and (max-width: 1220px) {
   .header_a_first {
     margin-left: 20px;
